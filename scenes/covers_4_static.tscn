@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://boaexe1g2g26p"]
+
+[ext_resource type="PackedScene" uid="uid://bp74wioceryb3" path="res://scenes/cover_static.tscn" id="1_0uqnp"]
+
+[node name="Covers4Static" type="Node2D" groups=["cover_group"]]
+
+[node name="CoverStatic" parent="." instance=ExtResource("1_0uqnp")]
+position = Vector2(85, 230)
+
+[node name="CoverStatic2" parent="." instance=ExtResource("1_0uqnp")]
+position = Vector2(25, 230)
+collision_layer = 145
+collision_mask = 145
+input_pickable = false
+
+[node name="CoverStatic4" parent="." instance=ExtResource("1_0uqnp")]
+position = Vector2(139, 230)
+collision_layer = 145
+collision_mask = 145
+input_pickable = false
+
+[node name="CoverStatic3" parent="." instance=ExtResource("1_0uqnp")]
+position = Vector2(199, 230)
+collision_layer = 145
+collision_mask = 145
+input_pickable = false

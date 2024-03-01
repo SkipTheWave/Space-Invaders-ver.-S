@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvf5g1hmcjl6"]
+
+[ext_resource type="PackedScene" uid="uid://bp74wioceryb3" path="res://scenes/cover_static.tscn" id="1_qhchy"]
+[ext_resource type="Script" path="res://scenes/cover_sliding.gd" id="2_n1k88"]
+
+[node name="CoverSliding" instance=ExtResource("1_qhchy")]
+script = ExtResource("2_n1k88")

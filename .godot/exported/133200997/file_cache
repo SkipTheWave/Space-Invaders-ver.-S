@@ -1,0 +1,16 @@
+res://scenes/covers_1_sliding.tscn::0a6788fa53ee2227cfe3056512264d5a::1705888560::res://.godot/exported/133200997/export-8d4cd10b393707e06a3314f9b50d44d3-covers_1_sliding.scn
+res://scenes/covers_1_static.tscn::52bdebda2891cbd3f766ed896b38a719::1705888560::res://.godot/exported/133200997/export-11c949da25c0998719f8fb28952a85dd-covers_1_static.scn
+res://scenes/covers_2_sliding.tscn::3da3ba58a33e9046844611c9617ee1f9::1705888560::res://.godot/exported/133200997/export-ace9aeddde4094959a0f31c223c7fe92-covers_2_sliding.scn
+res://scenes/covers_3_static.tscn::d18163e60b25afef1859542d5ae4d74d::1705888560::res://.godot/exported/133200997/export-4a46e329fbd2bcacbd491337f648a9b9-covers_3_static.scn
+res://scenes/covers_4_static.tscn::4811fc17b7e369614d6a14c09830e474::1705888560::res://.godot/exported/133200997/export-300dc3a300b3f97e31d717b91480ba1c-covers_4_static.scn
+res://scenes/cover_sliding.tscn::10b3dd729f6c23e0a32f6648c2af631b::1705882730::res://.godot/exported/133200997/export-fc51a1562796b176cdfc0c3ed7ad737b-cover_sliding.scn
+res://scenes/cover_static.tscn::9445e7c914b443cb1afc8111e109da0e::1705881809::res://.godot/exported/133200997/export-4f35a2f2d5423c70606326af607740b5-cover_static.scn
+res://scenes/enemy_large.tscn::bd7f993ccd8f2d878531fa7500bc3595::1705881251::res://.godot/exported/133200997/export-ec93b52a5e9c28c86f6444f469a4103e-enemy_large.scn
+res://scenes/enemy_medium.tscn::6e29225b52ad47311f03242a24babcf6::1705881251::res://.godot/exported/133200997/export-a7cd3cea093a16678910e25c4ad7bef3-enemy_medium.scn
+res://scenes/enemy_shot.tscn::545c50dbd83828412fd3bedc32acab39::1705881251::res://.godot/exported/133200997/export-b0f5b061f82c2bd928375deaa17f895d-enemy_shot.scn
+res://scenes/enemy_small.tscn::a1259733d5560b27e633fbdc7bf16168::1705890654::res://.godot/exported/133200997/export-a1e24ae8b0ee13649f8fe558b4d0db4c-enemy_small.scn
+res://scenes/enemy_ufo.tscn::0d827dbec4a72ab5fcb756a228b0032e::1705888560::res://.godot/exported/133200997/export-77142275b11fa85106bdf3a31487c271-enemy_ufo.scn
+res://scenes/explosion.tscn::2386ac7ec57fd9cfad8ccde91cfe0b5d::1705881251::res://.godot/exported/133200997/export-19462905a0f3b4b39165a3350317f22c-explosion.scn
+res://scenes/main.tscn::7e11fe011e9cfa2379103707b66bd63a::1705888711::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/player.tscn::a1f6700089187b55d065edf8c2645767::1705881251::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/player_shot.tscn::a4dae651c84accd3f42663ef2b5fd91f::1705869723::res://.godot/exported/133200997/export-aa51611cd1f06c1e572184855f1a2912-player_shot.scn

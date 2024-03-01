@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://bo01mkw7b86f1"]
+
+[ext_resource type="Script" path="res://scenes/enemy_shot.gd" id="1_8m52e"]
+[ext_resource type="Texture2D" uid="uid://ckio01tmvolow" path="res://assets/space invaders sprites.png" id="1_rppg5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dib1h"]
+atlas = ExtResource("1_rppg5")
+region = Rect2(40, 20, 5, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uqrj"]
+atlas = ExtResource("1_rppg5")
+region = Rect2(45, 20, 5, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed0yj"]
+atlas = ExtResource("1_rppg5")
+region = Rect2(55, 20, 5, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r6v0g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dib1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uqrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed0yj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xhp42"]
+size = Vector2(2, 7)
+
+[node name="EnemyShot" type="Area2D" groups=["enemy_shot"]]
+collision_layer = 129
+collision_mask = 129
+script = ExtResource("1_8m52e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r6v0g")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_xhp42")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp74wioceryb3"]
+
+[ext_resource type="Texture2D" uid="uid://cah7qv2fe6oyj" path="res://assets/rectangle.png" id="1_atvwn"]
+[ext_resource type="Script" path="res://scenes/cover_static.gd" id="1_v1760"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1uyk1"]
+size = Vector2(32, 8)
+
+[node name="CoverStatic" type="Area2D"]
+collision_layer = 144
+collision_mask = 144
+script = ExtResource("1_v1760")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("1_atvwn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1uyk1")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

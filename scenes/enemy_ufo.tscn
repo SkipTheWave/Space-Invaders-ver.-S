@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://bgnkmfvhdv233"]
+
+[ext_resource type="Script" path="res://scenes/enemy_ufo.gd" id="1_mxa36"]
+[ext_resource type="Texture2D" uid="uid://ckio01tmvolow" path="res://assets/space invaders sprites.png" id="2_nyj3u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp0mh"]
+atlas = ExtResource("2_nyj3u")
+region = Rect2(0, 36, 18, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slvxi"]
+atlas = ExtResource("2_nyj3u")
+region = Rect2(54, 0, 18, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hdtgw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp0mh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp0mh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slvxi")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ccls"]
+size = Vector2(14, 6)
+
+[node name="EnemyUFO" type="Area2D" groups=["enemy", "ufo"]]
+collision_layer = 9
+collision_mask = 9
+script = ExtResource("1_mxa36")
+score = 100
+shot_speed_mod = 2.0
+shot_color = Color(1, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(0.733333, 0, 0.329412, 1)
+sprite_frames = SubResource("SpriteFrames_hdtgw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_5ccls")
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 0.4
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 20)
+collision_mask = 8
+collide_with_areas = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]

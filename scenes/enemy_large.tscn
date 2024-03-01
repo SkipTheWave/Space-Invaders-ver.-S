@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://dgn6jf3mf80je"]
+
+[ext_resource type="Script" path="res://scenes/enemy.gd" id="1_0ttgb"]
+[ext_resource type="Texture2D" uid="uid://ckio01tmvolow" path="res://assets/space invaders sprites.png" id="1_68n5k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11l45"]
+atlas = ExtResource("1_68n5k")
+region = Rect2(36, 0, 18, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_885vi"]
+atlas = ExtResource("1_68n5k")
+region = Rect2(36, 10, 18, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slvxi"]
+atlas = ExtResource("1_68n5k")
+region = Rect2(54, 0, 18, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hdtgw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11l45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_885vi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slvxi")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ccls"]
+size = Vector2(12, 8)
+
+[node name="EnemyLarge" type="Area2D" groups=["enemy"]]
+collision_layer = 9
+collision_mask = 9
+script = ExtResource("1_0ttgb")
+score = 10
+shot_color = Color(0, 0.901961, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hdtgw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5ccls")
+
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 0.4
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 20)
+collision_mask = 8
+collide_with_areas = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]

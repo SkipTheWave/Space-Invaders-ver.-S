@@ -1,0 +1,53 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1706058405
+export_presets.cfg::TextFile::-1::1705891763::0::1::::<><>::
+icon.svg::CompressedTexture2D::8490569954101096445::1704922840::1704922854::1::::<><>::
+screenshot 2.jpg::CompressedTexture2D::6163644901616271499::1705891319::1705891523::1::::<><>::
+screenshot.jpg::CompressedTexture2D::8027107660275265245::1705891253::1705891523::1::::<><>::
+Space Invaders ver. S.apple-touch-icon.png::CompressedTexture2D::6895591909129814198::1705891763::1705891742::1::::<><>::
+Space Invaders ver. S.icon.png::CompressedTexture2D::3077933542228120476::1705891763::1705891742::1::::<><>::
+Space Invaders ver. S.png::CompressedTexture2D::8820836381175093909::1705891763::1705891742::1::::<><>::
+::res://assets/::1705890278
+CosmicAlien-V4Ax.ttf::FontFile::8591940620631165817::1705666034::1705666043::1::::<><>::
+coverhit.wav::AudioStreamWAV::4170674625937786132::1704815563::1705882635::1::::<><>::
+FLASHMAN.ogg::AudioStreamOggVorbis::8425912614850710687::1705875303::1705875509::1::::<><>::
+hurt.wav::AudioStreamWAV::2892244623428603968::1705854449::1705854552::1::::<><>::
+pew.wav::AudioStreamWAV::4145284169592514304::1705853970::1705854008::1::::<><>::
+rectangle.png::CompressedTexture2D::4789264673069455881::1705875762::1705875769::1::::<><>::
+Space Invaders S.png::CompressedTexture2D::7520131044794495388::1705889387::1705889435::1::::<><>::
+space invaders sprites.png::CompressedTexture2D::5492140904077596318::1705421273::1705421278::1::::<><>::
+splat.wav::AudioStreamWAV::3934735183862905774::1705853926::1705854008::1::::<><>::
+STAGE CLEAR.ogg::AudioStreamOggVorbis::5449397526098279920::1705874710::1705874825::1::::<><>::
+::res://scenes/::1705890654
+AudioManager.gd::GDScript::-1::1705885331::0::1::::<>Node<>::
+covers_1_sliding.tscn::PackedScene::1216236966916169364::1705888560::0::1::::<><>::uid://cvf5g1hmcjl6::::res://scenes/cover_sliding.tscn
+covers_1_static.tscn::PackedScene::5886250726800390002::1705888560::0::1::::<><>::uid://bp74wioceryb3::::res://scenes/cover_static.tscn
+covers_2_sliding.tscn::PackedScene::2919325261648844532::1705888560::0::1::::<><>::uid://cvf5g1hmcjl6::::res://scenes/cover_sliding.tscn
+covers_3_static.tscn::PackedScene::9214415846713675751::1705888560::0::1::::<><>::uid://bp74wioceryb3::::res://scenes/cover_static.tscn
+covers_4_static.tscn::PackedScene::3369348686423710009::1705888560::0::1::::<><>::uid://bp74wioceryb3::::res://scenes/cover_static.tscn
+cover_sliding.gd::GDScript::-1::1705884773::0::1::::<>Cover<>::
+cover_sliding.tscn::PackedScene::184087134531488361::1705882730::0::1::::<><>::uid://bp74wioceryb3::::res://scenes/cover_static.tscn<>res://scenes/cover_sliding.gd
+cover_static.gd::GDScript::-1::1705882756::0::1::::Cover<>Area2D<>::
+cover_static.tscn::PackedScene::3507113948560609958::1705881809::0::1::::<><>::uid://cah7qv2fe6oyj::::res://assets/rectangle.png<>res://scenes/cover_static.gd
+enemy.gd::GDScript::-1::1705886784::0::1::::Enemy<>Area2D<>::
+EnemyManager.gd::GDScript::-1::1705888560::0::1::::<>Node<>::
+EnemyState.gd::GDScript::-1::1705591209::0::1::::EnemyState<>Node<>::
+EnemyStateDown.gd::GDScript::-1::1705597550::0::1::::<>EnemyState<>::
+enemy_large.tscn::PackedScene::7609130629055686386::1705881251::0::1::::<><>::res://scenes/enemy.gd<>uid://ckio01tmvolow::::res://assets/space invaders sprites.png
+enemy_medium.tscn::PackedScene::8727885362762696928::1705881251::0::1::::<><>::res://scenes/enemy.gd<>uid://ckio01tmvolow::::res://assets/space invaders sprites.png
+enemy_shot.gd::GDScript::-1::1705850221::0::1::::<>Area2D<>::
+enemy_shot.tscn::PackedScene::3422274570491637208::1705881251::0::1::::<><>::res://scenes/enemy_shot.gd<>uid://ckio01tmvolow::::res://assets/space invaders sprites.png
+enemy_small.tscn::PackedScene::1279645865962662595::1705890654::0::1::::<><>::res://scenes/enemy.gd<>uid://ckio01tmvolow::::res://assets/space invaders sprites.png
+enemy_ufo.gd::GDScript::-1::1705888711::0::1::::<>Enemy<>::
+enemy_ufo.tscn::PackedScene::2835019551159153848::1705888560::0::1::::<><>::res://scenes/enemy_ufo.gd<>uid://ckio01tmvolow::::res://assets/space invaders sprites.png
+explosion.tscn::PackedScene::4532242282284247809::1705881251::0::1::::<><>::res://scenes/particles_autodelete.gd
+LivesLabel.gd::GDScript::-1::1705669141::0::1::::<>Label<>::
+main.gd::GDScript::-1::1705887401::0::1::::<>Node<>::
+main.tscn::PackedScene::2646039019537721337::1705888711::0::1::::<><>::uid://dtp0qg0ev76kj::::res://scenes/player.tscn<>res://scenes/main.gd<>uid://d4jsc2wq8b3vv::::res://scenes/covers_3_static.tscn<>uid://dgn6jf3mf80je::::res://scenes/enemy_large.tscn<>uid://bhue4i1xm6yo7::::res://scenes/covers_2_sliding.tscn<>uid://cp4lxpbi23c55::::res://scenes/covers_1_static.tscn<>res://scenes/EnemyManager.gd<>uid://rlfilnnwnivc::::res://scenes/covers_1_sliding.tscn<>res://scenes/EnemyState.gd<>uid://dwl385i3snece::::res://scenes/enemy_medium.tscn<>uid://boaexe1g2g26p::::res://scenes/covers_4_static.tscn<>res://scenes/EnemyStateDown.gd<>uid://sh4t0afkyc64::::res://scenes/enemy_small.tscn<>uid://duoaah1i63bxx::::res://assets/CosmicAlien-V4Ax.ttf<>res://scenes/LivesLabel.gd<>res://scenes/ScoreLabel.gd<>res://scenes/AudioManager.gd<>res://scenes/StageLabel.gd<>uid://dsbtsxqn1o41h::::res://assets/FLASHMAN.ogg<>uid://cjvy1s6440e0w::::res://assets/STAGE CLEAR.ogg<>uid://bwcarpy1qims1::::res://assets/splat.wav<>uid://b0cahvxh8d1ge::::res://assets/pew.wav<>uid://bhha31oluqis3::::res://assets/hurt.wav<>uid://b0oknwohwfbiy::::res://assets/coverhit.wav
+particles_autodelete.gd::GDScript::-1::1705853269::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1705881809::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::8525362598005764969::1705881251::0::1::::<><>::res://scenes/player.gd<>uid://ckio01tmvolow::::res://assets/space invaders sprites.png<>uid://cuwcot5wqb7vc::::res://scenes/player_shot.tscn
+player_shot.gd::GDScript::-1::1705873202::0::1::::<>Area2D<>::
+player_shot.tscn::PackedScene::6222182031145189268::1705869723::0::1::::<><>::uid://ckio01tmvolow::::res://assets/space invaders sprites.png<>res://scenes/player_shot.gd
+ScoreLabel.gd::GDScript::-1::1705849635::0::1::::<>Label<>::
+StageLabel.gd::GDScript::-1::1705862378::0::1::::<>Label<>::

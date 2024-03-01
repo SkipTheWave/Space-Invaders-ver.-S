@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp4lxpbi23c55"]
+
+[ext_resource type="PackedScene" uid="uid://bp74wioceryb3" path="res://scenes/cover_static.tscn" id="1_x1sjc"]
+
+[node name="Covers1Static" type="Node2D" groups=["cover_group"]]
+
+[node name="CoverStatic" parent="." instance=ExtResource("1_x1sjc")]
+position = Vector2(112, 230)

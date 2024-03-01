@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuwcot5wqb7vc"]
+
+[ext_resource type="Texture2D" uid="uid://ckio01tmvolow" path="res://assets/space invaders sprites.png" id="1_bukdp"]
+[ext_resource type="Script" path="res://scenes/player_shot.gd" id="1_xfode"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3an7"]
+size = Vector2(3, 7)
+
+[sub_resource type="Curve" id="Curve_y8p8m"]
+_data = [Vector2(0, 1), 0.0, -0.115279, 0, 0, Vector2(1, 0.220376), -2.04526, 0.0, 0, 0]
+point_count = 2
+
+[node name="PlayerShot" type="Area2D" groups=["player_shot"]]
+collision_layer = 25
+collision_mask = 25
+script = ExtResource("1_xfode")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bukdp")
+region_enabled = true
+region_rect = Rect2(41, 21, 3, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_l3an7")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 10
+lifetime = 0.2
+randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(1, 3)
+direction = Vector2(0, 1)
+spread = 50.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 30.0
+linear_accel_min = -42.07
+linear_accel_max = -31.36
+scale_amount_min = 0.5
+scale_amount_curve = SubResource("Curve_y8p8m")
+color = Color(0.839216, 0.839216, 0.839216, 0.639216)
